@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="directline.css">
         <title>YAM SOON</title>
         <link rel="icon" type="image/png" href="https://i.ibb.co/WxtSQTB/favicon.png"/>
         <style>
-            .lightfire { position:absolute; top:300px; left:47%;right:53%;
-            animation: lighterfire 2s ease-out 0}
-            .darkfire { position: absolute; top:305px;left:47%;right:53%;
-            animation: darkerfire 2s ease-out 0}
-            .icon {position: absolute; top:350px; left:48%;right:52%;
-            animation: igicon 2s ease-out 0}
-            .email {position: absolute; bottom: 0mm;}
+            .lightfire { position:absolute; top:300px; left:47%;right:53%}
+            .darkfire { position: absolute; top:305px;left:47%;right:53%}
+            .icon {position: absolute; top:350px; left:48%;right:52%}
+            .email {position: absolute; bottom: 0mm}
+
+            .firepit:hover .darkfire { animation: darkerfire 2s ease-out 0}
+            .firepit:hover .lightfire {animation: lighterfire 2s ease-out 0}
+            .firepit:hover .icon {animation: igicon 2s ease-out 0}
             
 
 
-            img:hover {
-                animation-name: [lighterfire] [darkerfire] [igicon]; 
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
-            }
       
         @keyframes darkerfire {
             0% { opacity: 60%; transform: translate(0.2px, 0.2px) rotate(0deg);}
@@ -45,25 +41,28 @@
             100% { opacity:70%; transform: translate(0.3px, 0.3px) rotate(0deg);}
         }
         </style>
-  </head>  
+</head>  
 
     
   
   
-  <body style="text-align:center;vertical-align:middle">
+<body style="text-align:center;vertical-align:middle">
     
-  
-        <img src="https://i.ibb.co/Sydhx55/darkorange.png" alt="dark orange" class="darkfire" width="75" height="110">
-        <img src="https://i.ibb.co/B4C7Rhm/lightorange.png" alt="light orange" class="lightfire" width="75" height="110">
-        <a href="http://www.instagram.com/yamsooooon">
-        <img src="https://i.ibb.co/c1gXmDm/Asset-2.png" alt="instgram logo" width="50" height="50" class="icon">
-        </a>
-   
-      <div>
-    <a href ="mailto: samyoonn0@gmail.com"><img src="https://i.ibb.co/KDV0GDf/email.png" alt="email" class="email"/>
-    </a>
+    <div class="firepit">
+        <div id="darkfire"><img src="https://i.ibb.co/Sydhx55/darkorange.png" alt="dark orange" class="darkfire" width="75" height="110"></div>
+        <div id="lightfire"> <img src="https://i.ibb.co/B4C7Rhm/lightorange.png" alt="light orange" class="lightfire" width="75" height="110"></div>
+        <div id="icon"><a href="http://www.instagram.com/yamsooooon">
+            <img src="https://i.ibb.co/c1gXmDm/Asset-2.png" alt="instgram logo" width="50" height="50" class="icon">
+        </a></div>
     </div>
 
-    </body>
+
+    <div>
+        <a href ="mailto: samyoonn0@gmail.com"><img src="https://i.ibb.co/KDV0GDf/email.png" alt="email" class="email"/>
+        </a>
+    </div>
+
+
+</body>
 
 </html>
