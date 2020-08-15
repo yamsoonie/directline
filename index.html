@@ -10,9 +10,9 @@
             .firepit{position: absolute; top:350px; left:50%;right:50%}
             .email {position: absolute; bottom: 0mm}
 
-            .firepit:hover .darkfire { animation: darkerfire 2s ease-out 0}
-            .firepit:hover .lightfire {animation: lighterfire 2s ease-out 0}
-            .firepit:hover .icon {animation: igicon 2s ease-out 0}
+            .firepit:hover .darkfire { animation: darkerfire 4s ease-out 2}
+            .firepit:hover .lightfire {animation: lighterfire 4s ease-out 2}
+            .firepit:hover .icon {animation: igicon 4s ease-out 2}
             
 
 
@@ -47,14 +47,19 @@
 <body>
     
     <div class="firepit">
-        <div id="darkfire"><img src="https://i.ibb.co/Sydhx55/darkorange.png" alt="dark orange" width="75" height="110"></div>
-        <div id="lightfire"> <img src="https://i.ibb.co/B4C7Rhm/lightorange.png" alt="light orange" width="75" height="110"></div>
-        <div id="icon"><a href="http://www.instagram.com/yamsooooon">
-            <img src="https://i.ibb.co/c1gXmDm/Asset-2.png" alt="instgram logo" width="50" height="50" >
-        </a></div>
+        <div class="darkfire"></div>
+        <div class="lightfire"></div>
+        <div class="icon"></div>
     </div>
 
 
+    <img src="https://i.ibb.co/Sydhx55/darkorange.png" alt="dark orange" width="75" height="110" class="darkfire">
+    <img src="https://i.ibb.co/B4C7Rhm/lightorange.png" alt="light orange" width="75" height="110" class="lightfire">
+    <a href="http://www.instagram.com/yamsooooon">
+            <img src="https://i.ibb.co/c1gXmDm/Asset-2.png" alt="instgram logo" width="50" height="50" class="icon">
+    </a>
+   
+   
     <div>
         <a href ="mailto: samyoonn0@gmail.com"><img src="https://i.ibb.co/KDV0GDf/email.png" alt="email" class="email"/>
         </a>
